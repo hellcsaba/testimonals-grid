@@ -37,6 +37,9 @@ body {
 .testimonial {
     padding: 2rem;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
 }
 
 .testimonial--daniel {
@@ -78,4 +81,37 @@ body {
 
 .testimonial__image--patrick {
     border: 0.15rem solid var(--moderate-violet);
+}
+
+.testimonial__status--white {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.testimonial__status--black {
+    color: hsla(217, 30%, 14%, 0.5);
+}
+
+.testimonial__name {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.testimonial__name--black {
+    font-weight: 500;
+}
+
+.testimonial__intro {
+    font-size: 1.275rem;
+    font-weight: 500;
+    line-height: 2.2ch;
+}
+
+.testimonial__quote--white {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-weight: 500;
+}
+
+.testimonial__quote--black {
+    color: hsla(217, 30%, 14%, 0.7);
+    font-weight: 500;
 }
