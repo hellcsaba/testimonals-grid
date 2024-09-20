@@ -13,7 +13,7 @@
   }
   
 *, *::before, *::after {
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -24,12 +24,12 @@ body {
     background-color: var(--light-grayish-blue);
     color: var(--white);
     line-height: 3ch;
+    min-height: 100vh;
 }
 
 .testimonial-list {
     display: grid;
     place-items: center;
-    min-height: 100vh;
     gap: 1.5rem;
     margin: 5rem 1.5rem;
 }
@@ -114,4 +114,44 @@ body {
 .testimonial__quote--black {
     color: hsla(217, 30%, 14%, 0.7);
     font-weight: 500;
+}
+
+@media (min-width: 62.5rem) {
+    body {
+        display: grid;
+        place-items: center;
+    }
+    .testimonial-list {
+        max-width: 70rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .testimonial {
+        width: auto;
+        height: auto;
+    }
+
+    .testimonial--daniel {
+        grid-area: 1 / 1 / 1 / span 2;
+    }
+
+    .testimonial--jonathan {
+        grid-area: 1 / 3 / 1 / 3;
+    }
+
+    .testimonial--jeanette {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+    
+    .testimonial--patrick {
+        grid-area: 2 / 2 / 2 / span 2;
+    }
+
+    .testimonial--kira {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+    
 }
