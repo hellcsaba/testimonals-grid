@@ -44,6 +44,9 @@ body {
 
 .testimonial--daniel {
     background-color: var(--moderate-violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-position: 88% 0%;
+    background-repeat: no-repeat;
 }
 
 .testimonial--jonathan {
@@ -136,6 +139,7 @@ body {
 
     .testimonial--daniel {
         grid-area: 1 / 1 / 1 / span 2;
+        background-position: 82% 0%;
     }
 
     .testimonial--jonathan {
