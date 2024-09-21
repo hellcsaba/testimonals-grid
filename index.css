@@ -110,12 +110,12 @@ body {
 }
 
 .testimonial__quote--white {
-    color: hsla(0, 0%, 100%, 0.7);
+    color: hsla(0, 0%, 100%, 0.5);
     font-weight: 500;
 }
 
 .testimonial__quote--black {
-    color: hsla(217, 30%, 14%, 0.7);
+    color: hsla(217, 30%, 14%, 0.5);
     font-weight: 500;
 }
 
